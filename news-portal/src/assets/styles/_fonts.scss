@@ -1,0 +1,27 @@
+@import '@fontsource/inter/scss/mixins';
+
+$weightVars: (300, 400, 500, 700);
+
+@each $weightVar in $weightVars {
+  @include fontFaceCustom($fontName, $fontId, $style, $display, #{$weightVar})
+}
+
+.font-light {
+  font-family: $fontName, "Helvetica","Arial",sans-serif;
+  font-weight: 400;
+}
+
+.font-regular {
+  font-family: $fontName, "Helvetica","Arial",sans-serif;
+  font-weight: 400;
+}
+
+.font-medium {
+  font-family: $fontName, "Helvetica","Arial",sans-serif;
+  font-weight: 500;
+}
+
+.font-bold {
+  font-family: $fontName, "Helvetica","Arial",sans-serif;
+  font-weight: 700;
+}
