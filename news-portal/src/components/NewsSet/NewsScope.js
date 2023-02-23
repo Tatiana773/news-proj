@@ -4,8 +4,10 @@ import NewsItem from "../NewsSet/NewsItem"
 const NewsScope = ({title, news, category}) => {
 
     const itemsToDisplay = useMemo(() =>{
-       return news.filter((i) =>Number(i.categoryId) === category) 
+       return news.filter((i) =>Number(i.categoryId) === category).sort((a,b) => new Date(b.timestamp) - new Date(a.timestamp)) 
     }, [news, category])
+
+    
    
     return (
         <div className="news-list">
