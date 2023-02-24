@@ -4,6 +4,7 @@ import loadable from '@loadable/component'
 const HomePage = loadable(() => import('../pages/HomePage'))
 const AboutPage = loadable(() => import('../pages/AboutPage'))
 const NewsSetPage = loadable(() => import('../pages/NewsSetPage'))
+const NewsPage = loadable(() => import('../pages/NewsPage'))
 const Error404Page = loadable(() => import('../pages/Errors/Error404Page'))
 
 export const privateRoutes = [
@@ -20,8 +21,12 @@ export const publicRoutes = [
         element:  <AboutPage/>
     },
     {
-        path: '/newsset',
+        path: '/news',
         element:  <NewsSetPage/>
+    },
+    {
+        path: '/news/:newsId',
+        element: <NewsPage/>
     },
     {
         path: '*',

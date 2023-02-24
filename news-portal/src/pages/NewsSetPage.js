@@ -8,8 +8,8 @@ import { selectCategories } from '../store/categories/selectors'
 
 const NewsSetPage = () =>{
 
-    const news = useSelector(selectNewsItems);
-    const categories = useSelector(selectCategories);
+    const news = useSelector(selectNewsItems)
+    const categories = useSelector(selectCategories)
 
     return(
         <Grid

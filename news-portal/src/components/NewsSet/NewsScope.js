@@ -18,6 +18,7 @@ const NewsScope = ({title, news, category}) => {
                         <NewsItem
                             key={item.id}
                             item={item}
+                            
                         />
                     )
                 }

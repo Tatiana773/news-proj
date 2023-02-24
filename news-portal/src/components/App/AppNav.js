@@ -11,7 +11,7 @@ const AppNav = () => {
                 <NavLink to="/about">About</NavLink>
             </li>
             <li>
-                <NavLink to="/newsset">News Set</NavLink>
+                <NavLink to="/news">News Set</NavLink>
             </li>
         </ul>
     )
